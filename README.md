@@ -25,10 +25,12 @@ To successfully set up the V-Flow system, the following components are essential
 - **Silicon Mats**: These mats are necessary for crafting one-way valves used with the CEVS. Additionally, adding a valve on the `Window_Vent_Hose_Adapter.stl` for single or dual printer setups can prevent backdraft, though it remains optional. [View on Amazon](https://www.amazon.com/gp/product/B083TKTJS5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 
-## Recommended/Required Mods
+## Recommended Mods
 To enhance the performance of the V-Flow system and ensure optimal chamber temperature management, the following modifications are highly recommended:
 - **Ellis Bed Fan Mod**: Essential for controlling chamber temperatures. This mod is crucial when using the V-Flow exhaust system. [Ellis Bed Fans Mod](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Bed_Fans).
 - **Clicky-Clack Fridge Door Mod**: A highly recommended addition for its superior sealing properties, plus it's just an awesome mod. [Clicky-Clack Door Mod](https://github.com/tanaes/whopping_Voron_mods/tree/main/clickyclacky_door).
+- **RockNRoll Mod**: Facilitates easier access to the electronics compartment by allowing the printer to be rolled onto its back without damaging cables or the exhaust system. [RockNRoll Mod](https://mods.vorondesign.com/detail/tiIhFDTh9tHJY0JNJK9A).
+- **ACM Panels**: For enhanced thermal management and durability, using Aluminum Composite Material (ACM) panels for the bottom and back of the enclosure is recommended.
 - **Extrusion End Caps**: My creation, `Extrusion_End_Cap.stl`, available in `STL_FILES/Accessories_&_Tools`, seals the gaps at the extrusion joints on the top of the machine.
 - **Z-Covers & Z-Plug**: Remixed parts, originals sourced from the internet. These parts seal gaps around the Z motors, specific to Voron 2.4. Available in the `STL_FILES/Accessories_&_Tools` folder.
 - **Bed Wiring Grommet by LoCoCNC**: Organizes and protects bed wires, offering a cleaner setup and better seal. [Bed Wiring Grommet](https://mods.vorondesign.com/detail/PNilw0WXR7Qmhquj749iFg).
