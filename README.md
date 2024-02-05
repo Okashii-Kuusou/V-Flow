@@ -1,13 +1,10 @@
 # V-Flow
-A fume extraction system for Voron 2.4 and Trident 3D printers.
+Welcome to the V-Flow Fume Extraction System, tailored for Voron 2.4 and Trident 3D printers. This innovative solution is crafted to enhance your 3D printing environment by safely managing and redirecting fumes outdoors, ensuring a clean and healthy workspace. Emphasizing user-friendly design, the V-Flow system integrates seamlessly with your setup, supported by a community-driven repository of print-ready components and comprehensive guides for optimal enclosure conditions.
 ![](Reference_Images/V-Flow_Cross_Section_View.jpg)
-## Introduction
-The V-Flow Fume Extraction System is specifically designed for the Voron 2.4 and Trident (untested). It offers a practical solution for managing and redirecting ABS/ASA material fumes outside through a 4-inch dryer window vent. This system is engineered for easy assembly. All the systems components are designed to be printed without support using Voron recommended print settings. The repository also includes additional components aimed at sealing the enclosure and maintaining optimal chamber temperatures.
 
-
-## Features
+## Key Features
 - **Direct Fume Extraction:** Routes ABS/ASA fumes outside, ensuring cleaner workspace air.
-- **Ease of Assembly:** All components are designed to be printed without the need for support.
+- **Ease of Assembly:** All components are designed to be printed without the need for support using Voron recommended print settings.
 - **Quick Disconnect:** Enables effortless hose detachment for hassle-free maintenance.
 - **Adhesive-Free Seal:** Facilitates easy installation and removal, enhancing convenience.
 - **Dual Printer Compatibility:** Designed to work seamlessly with a second printer, the system includes the Combined Exhaust Ventilation System (CEVS) for integrating two printers into a single exhaust setup, effectively preventing backflow.
@@ -22,7 +19,7 @@ The V-Flow Fume Extraction System is specifically designed for the Voron 2.4 and
 
 ## Prerequisites for V-Flow System Installation
 To successfully set up the V-Flow system, the following components are essential:
-- **Noctua NF-A6x25 Fan**: This fan is recommended ([Extraction Analysis](Noctua-NF-A6x25-Fume_Extraction_Analysis.md)) for its efficient airflow and quiet operation. [View on Amazon](https://www.amazon.com/dp/B01K4HRLRI?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+- **Noctua NF-A6x25 Fan**: This fan is recommended ([Fume Extraction Analysis](Noctua-NF-A6x25-Fume_Extraction_Analysis.md)) for its efficient airflow and quiet operation. [View on Amazon](https://www.amazon.com/dp/B01K4HRLRI?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 - **Dryer Vent Window Kit**: This kit is designed for a 4-inch hose. However, the `Window_Vent_Hose_Adapter.stl`, found in the`Combined_Exhaust_Vent_System` STL folder, modifies this setup to accommodate a 2.5-inch hose. [View on Amazon](https://www.amazon.com/gp/product/B0BXWH53M4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 - **2.5-inch Hose**: This hose connects the printer(s) to the window dryer vent. Note: The hose is available in 10ft lengths; assess your space to determine the required length for your setup. [View on Amazon](https://www.amazon.com/gp/product/B0C85G8P2R/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 - **Silicon Mats**: These mats are necessary for crafting one-way valves used with the CEVS. Additionally, adding a valve on the `Window_Vent_Hose_Adapter.stl` for single or dual printer setups can prevent backdraft, though it remains optional. [View on Amazon](https://www.amazon.com/gp/product/B083TKTJS5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
