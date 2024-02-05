@@ -1,5 +1,5 @@
 # V-Flow
-Welcome to the V-Flow Fume Extraction System, tailored for Voron 2.4 and Trident 3D printers. This innovative solution is crafted to enhance your 3D printing environment by safely managing and redirecting fumes outdoors, ensuring a clean and healthy workspace. Emphasizing user-friendly design, the V-Flow system integrates seamlessly with your setup, supported by a community-driven repository of print-ready components and comprehensive guides for optimal enclosure conditions.
+Welcome to the V-Flow Fume Extraction System, tailored for Voron 2.4 and Trident 3D printers. Designed to enhance your 3D printing environment by safely managing and redirecting fumes outdoors, ensuring a clean and healthy workspace. Emphasizing user-friendly design, the V-Flow system integrates seamlessly with your setup, supported by a community-driven repository of print-ready components and comprehensive guides for optimal enclosure conditions.
 ![](Reference_Images/V-Flow_Cross_Section_View.jpg)
 
 ## Key Features
