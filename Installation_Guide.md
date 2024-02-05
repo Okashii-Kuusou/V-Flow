@@ -527,44 +527,19 @@ gcode:
 ```
 
 
-## Conclusion
-  - Whether you choose the advanced method for precise control based on specific parameters or the simplified approach for ease of use, both strategies provide effective ways to manage your printing environment's air quality. The advanced settings offer customization and optimization for various materials and conditions, while the simplified method ensures basic ventilation needs are met with minimal setup.
-
 ### Guidance for Next Steps
 1. **Test Configuration:** After implementing these configurations, perform test prints to ensure that the exhaust and bedFans operate as expected. Monitor the chamber and bed temperatures to verify that they remain within desired ranges.
 2. **Adjust Parameters:** Based on test print results and your observations, adjust the fan speeds, temperature thresholds, and other parameters as necessary to optimize printing conditions for your specific setup.
 3. **Documentation:** Keep detailed notes on any changes made to the configuration for future reference or troubleshooting.
-
-
-
-# Determining Noctua NF-A6x25 Fan Suitability for Fume Extraction
-  - This document provides a technical analysis demonstrating why the Noctua NF-A6x25 fan is adequate for ventilating a specified 3D printing enclosure. The analysis takes into account the volume of the enclosure, the air change rate (ACR) required for safe operation and compares these requirements against the capabilities of the Noctua NF-A6x25 fan.
-
-## Enclosure Volume Calculation
-  - Given the initial dimensions of the enclosure as 350mm x 350mm x 350mm, and accounting for an additional 50% increase in volume, the total volume is calculated as follows:
-    - **Initial Volume:** `350mm x 350mm x 350mm = 42,875,000 mm³`
-    - **50% Additional Volume:** `0.5 x 42,875,000 mm³ = 21,437,500 mm³`
-    - **Total Volume:** `42,875,000 mm³ + 21,437,500 mm³ = 64,312,500 mm³`
-    - **Converted to cubic meters (m³):** `64,312,500 mm³ / 1,000,000 = 0.0643125 m³`
-
-## Air Change Rate (ACR) Consideration
-  - For safe ventilation of ABS fumes, an ACR of 5 to 10 air changes per hour is recommended. Opting for the higher safety margin of 10 ACH:
-    - **Required Airflow:** `0.0643125 m³ x 10 ACH = 0.643125 m³/h`
-
-## Noctua NF-A6x25 Fan Specifications
-  - The Noctua NF-A6x25 fan, with its specifications provided as follows, exceeds the required airflow for the calculated enclosure volume:
-    - **Airflow:** `29.2 m³/h`
-      - **This airflow significantly surpasses the minimum required airflow calculated for the enclosure, ensuring adequate ventilation.**
-
+   
 ## Conclusion
-  - Given the calculated required airflow of `0.643125 m³/h` for the increased volume of the 3D printing enclosure and comparing it to the Noctua NF-A6x25 fan's airflow capability of `29.2 m³/h`, it's evident that the fan provides more than sufficient airflow to meet the recommended ACR for safely venting ABS fumes. 
-  - This analysis confirms the adequacy of the Noctua NF-A6x25 for this specific application, ensuring a safe environment for 3D printing activities involving ABS material.
-
+  - Whether you choose the advanced method for precise control based on specific parameters or the simplified approach for ease of use, both strategies provide effective ways to manage your printing environment's air quality. The advanced settings offer customization and optimization for various materials and conditions, while the simplified method ensures basic ventilation needs are met with minimal setup.
 
 
 ## Support
 - Feel free to reach out to me on discord at okashiikuusou
-- 
+
+
 # Acknowledgements
 - The `Voron-Rear_Mounting_Plate.stl` is a component I've remixed. The `Voron-M16_Cable_Gland_Housing.stl` stl remains unchanged. Both are from the umbilical passthrough mod by [whopping_Voron_mods](https://github.com/tanaes/whopping_Voron_mods/tree/main/umbilical_passthrough)
 - Inspiration for the one-way valve feature comes from the 2.4 Window Ventilation System available on [TeamFDM](https://www.teamfdm.com/files/file/463-24-window-ventilation-system/).
