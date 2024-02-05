@@ -22,7 +22,7 @@ The V-Flow Fume Extraction System is specifically designed for the Voron 2.4 and
 
 ## Prerequisites for V-Flow System Installation
 To successfully set up the V-Flow system, the following components are essential:
-- **Noctua NF-A6x25 Fan**: This fan is recommended for its efficient airflow and quiet operation. [View on Amazon](https://www.amazon.com/dp/B01K4HRLRI?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+- **Noctua NF-A6x25 Fan**: This fan is recommended ([Extraction Analysis](Noctua-NF-A6x25-Fume_Extraction_Analysis.md)) for its efficient airflow and quiet operation. [View on Amazon](https://www.amazon.com/dp/B01K4HRLRI?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 - **Dryer Vent Window Kit**: This kit is designed for a 4-inch hose. However, the `Window_Vent_Hose_Adapter.stl`, found in the`Combined_Exhaust_Vent_System` STL folder, modifies this setup to accommodate a 2.5-inch hose. [View on Amazon](https://www.amazon.com/gp/product/B0BXWH53M4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 - **2.5-inch Hose**: This hose connects the printer(s) to the window dryer vent. Note: The hose is available in 10ft lengths; assess your space to determine the required length for your setup. [View on Amazon](https://www.amazon.com/gp/product/B0C85G8P2R/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 - **Silicon Mats**: These mats are necessary for crafting one-way valves used with the CEVS. Additionally, adding a valve on the `Window_Vent_Hose_Adapter.stl` for single or dual printer setups can prevent backdraft, though it remains optional. [View on Amazon](https://www.amazon.com/gp/product/B083TKTJS5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
