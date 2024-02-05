@@ -6,6 +6,7 @@ This installation guide covers various aspects necessary for setting up the V-Fl
 - **STL File Structure** - Overview of the file organization and naming conventions.
 - **Tools/Items Required** - List of tools and number of items needed for the assembly of the V-Flow system.
 - **General Assembly Guide** - Step-by-step instructions for assembling the V-Flow components.
+- **Enclosure Seal Guide** - Strategies and tips for enhancing your printer's enclosure integrity to maintain optimal temperatures.
 - **Combined Exhaust Ventilation System (CEVS) Installation Guide** - Detailed guide on integrating the CEVS with your printer(s).
 - **G-Code Configuration Guide** - Instructions for configuring your printer firmware to support the V-Flow system.
 
@@ -18,10 +19,12 @@ To successfully set up the V-Flow system, the following components are essential
 - **Silicon Mats**: These mats are necessary for crafting one-way valves used with the CEVS. Additionally, adding a valve on the `Window_Vent_Hose_Adapter.stl` for single or dual printer setups can prevent backdraft, though it remains optional. [View on Amazon](https://www.amazon.com/gp/product/B083TKTJS5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 
-## Recommended/Required Mods
+## Recommended Mods
 To enhance the performance of the V-Flow system and ensure optimal chamber temperature management, the following modifications are highly recommended:
 - **Ellis Bed Fan Mod**: Essential for controlling chamber temperatures. This mod is crucial when using the V-Flow exhaust system. [Ellis Bed Fans Mod](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Bed_Fans).
 - **Clicky-Clack Fridge Door Mod**: A highly recommended addition for its superior sealing properties, plus it's just an awesome mod. [Clicky-Clack Door Mod](https://github.com/tanaes/whopping_Voron_mods/tree/main/clickyclacky_door).
+- **RockNRoll Mod**: Facilitates easier access to the electronics compartment by allowing the printer to be rolled onto its back without damaging cables or the exhaust system. [RockNRoll Mod](https://mods.vorondesign.com/detail/tiIhFDTh9tHJY0JNJK9A).
+- **ACM Panels**: For enhanced thermal management and durability, using Aluminum Composite Material (ACM) panels for the bottom and back of the enclosure is recommended.
 - **Extrusion End Caps**: My creation, `Extrusion_End_Cap.stl`, available in `STL_FILES/Accessories_&_Tools`, seals the gaps at the extrusion joints on the top of the machine.
 - **Z-Covers & Z-Plug**: Remixed parts, originals sourced from the internet. These parts seal gaps around the Z motors, specific to Voron 2.4. Available in the `STL_FILES/Accessories_&_Tools` folder.
 - **Bed Wiring Grommet by LoCoCNC**: Organizes and protects bed wires, offering a cleaner setup and better seal. [Bed Wiring Grommet](https://mods.vorondesign.com/detail/PNilw0WXR7Qmhquj749iFg).
@@ -143,20 +146,37 @@ The STL files for the V-Flow system are organized into three main directories wi
     - For those operating a single printer setup, the final assembly step is to install the dryer window vent and connect it using the `Window_Vent_Hose_Adapter.stl`. To address potential backflow issues, incorporating a one-way valve into this adapter is recommended. A silicon cutting guide is available in the `STL_FILES/Accessories_&_Tools` folder. Crafting the silicon mat for the valve requires careful attention; use a sharp box cutter for accuracy. Once the main shape is cutout, make an incision in the center and push an M3X8mm bolt through the slit. After affixing a heat insert to the adapter, carefully screw in the bolt, ensuring the silicon remains flush against the adapter for the best seal.
      - To accommodate a range of dryer window vents and ensure a perfect fit, the Fusion360 file for the `Window_Vent_Hose_Adapter.stl` is included in the repository. This allows for easy adjustments to the adapter’s dimensions, ensuring compatibility with various vent designs. It can be found in the `STL_FILES/Combined_Exhaust_Vent_System` folder.
 
-10. **Additional Considerations:**
-	- Achieving an optimal printing environment, especially when using materials like ABS or ASA, involves more than just effective fume extraction. Sealing your printer plays a crucial role in maintaining a stable temperature inside the chamber. For this purpose, applying tape to seal the bottom panel can significantly reduce heat loss.
-	- Not only do these sealing measures contribute to a more controlled printing environment, but they also allow for the fan to operate at full power (when combined with bed fans) without compromising the chamber's temperature. This balance ensures that while fumes are efficiently extracted, the internal conditions remain ideal for high-quality prints.
-	- Sealing components, tailored specifically for the Voron 2.4, can be found in the `STL_FILES/Accessories_&_Tools` folder:
-  		- `Extrusion_End_Cap-x4.stl`: Designed to seal the ends of the extrusions, reducing air leakage.
-  		- `Z_Cover_A.stl` & `Z_Cover_B.stl`: These covers seal the Z-axis motors, preventing heat escape.
-  		- `Z_Plug.stl`: Plugs for sealing any remaining openings around the Z-axis belts.
+
+## Enclosure Seal Guide
+To achieve the highest quality prints, especially with materials like ABS or ASA, it's essential to ensure your 3D printer's enclosure is properly sealed. This guide highlights crucial steps and components to enhance your printer's environment, maintaining stable temperatures and supporting efficient fume extraction.
+
+1. **Seal the Bottom Panel**: 
+   - A fundamental yet impactful strategy to curb heat loss involves sealing the bottom panel of your printer. Employing high-temperature resistant tape to cover any gaps markedly enhances heat retention within the chamber. For aesthetic considerations, it is recommended to apply the sealing tape to the underside of the bottom panel rather than the top.
+
+2. **Install Foam Tape on All Panels**:
+   - Ensuring that all panels, including side, top, and back, are properly sealed with foam tape is crucial. Adhere to Voron's recommendations and installation instructions for applying foam tape.
+
+3. **Verify Panel Clips Functionality**:
+   - It is imperative to ensure that the clips used to secure the panels to the printer are in proper working condition and applying sufficient force. Adequate tension by the clips is essential for maintaining the integrity of the seal, preventing any unattended gaps that could compromise the enclosure's thermal management. Regularly inspect and adjust the clips as needed to ensure a snug fit.
+
+4. **Aluminum Composite Material**:
+   - For enhanced thermal management, consider using ACM panels for the bottom and back of the enclosure. ACM panels offer superior heat retention and durability, further contributing to a stable printing environment.
+
+5. **Maintain Temperature Control**: 
+   - Adequate sealing allows the fume extraction system to function at full capacity without affecting the chamber's temperature adversely. The Ellis Bed Fan Mod becomes a critical component in achieving this synergy, as it enables effective temperature management alongside efficient fume extraction. This equilibrium is vital for the removal of fumes without deteriorating the internal chamber temperatues conducive to producing high-quality prints.
+
+6. **Install Sealing Components**: 
+   - Voron 2.4 and Trident printers benefit from specially designed components that reduce air leakage. These components can be found in the `STL_FILES/Accessories_&_Tools` directory:
+     - `Extrusion_End_Cap-x4.stl`: Caps the ends of the frame extrusions, compatible with both Voron 2.4 and Trident printers.
+     - `Z_Cover_A.stl` & `Z_Cover_B.stl`: Seals off the Z-axis motors on 2.4 printers.
+     - `Z_Plug.stl`: Seals openings around the Z-axis belts on 2.4 printers.
+
+Implementing these steps and utilizing the outlined components will markedly elevate your printer's performance. A meticulously sealed environment not only optimizes the functionality of the V-Flow Fume Extraction System but also significantly enhances the overall quality of prints.
 
 
 ## Combined Exhaust Ventilation System (CEVS) Installation Guide
   - The V-Flow system, designed for dual printer support, is a dynamic project with flexibility to scale. This guide details the current setup for the CEVS, however there is always potential for upgrades or new components to extend its capacity based on need/demand.
-
-### Installation Overview
-  - The CEVS is engineered for straightforward installation, with the most challenging aspect being the printing of the `CEVS-Main_Hub.stl` file. This component is pre-oriented to print without the need for support, though a brim of at least 10mm is recommended for optimal bed adhesion. The same print settings and recommendations as previously mentioned apply here.
+  	- The most challenging aspect being this guide is the printing of the `CEVS-Main_Hub.stl` file. This component is pre-oriented to print without the need for support, though a brim of at least 10mm is recommended for optimal bed adhesion. The same print settings and recommendations as previously mentioned apply here.
 
 ### CEVS Step-by-Step Installation
 1. **Heat Inserts and Foam Tape Application**:
