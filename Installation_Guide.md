@@ -13,7 +13,7 @@ This guide will lead you through setting up the V-Flow system step-by-step, aimi
 - **Quick Disconnect**: Enables effortless hose detachment for hassle-free maintenance.
 - **Adhesive-Free Seal**: Facilitates easy installation and removal, enhancing convenience.
 - **Dual Printer Compatibility**: Designed to work seamlessly with a second printer, the system includes the Combined Exhaust Ventilation System (CEVS) for integrating two printers into a single exhaust setup, effectively preventing backflow.
-- - **Seamless Cable Management:** By routing the CANbus cable out the exhaust port and the back of the machine, it provides a more seamless and elegant look to the printer, organizing cables away from sight for a cleaner appearance.
+- **Seamless Cable Management:** By routing the CANbus cable out the exhaust port and the back of the machine, it provides a more seamless and elegant look to the printer, organizing cables away from sight for a cleaner appearance.
 
 
 ## Prerequisites for V-Flow System Installation
@@ -149,13 +149,13 @@ The STL files for the V-Flow system are organized into three main directories wi
     - For those operating a single printer setup, the final assembly step is to install the dryer window vent and connect it using the `Window_Vent_Hose_Adapter.stl`. To address potential backflow issues, incorporating a one-way valve into this adapter is recommended. A silicon cutting guide is available in the `STL_FILES/Accessories_&_Tools` folder. Crafting the silicon mat for the valve requires careful attention; use a sharp box cutter for accuracy. Once the main shape is cutout, make an incision in the center and push an M3X8mm bolt through the slit. After affixing a heat insert to the adapter, carefully screw in the bolt, ensuring the silicon remains flush against the adapter for the best seal.
      - To accommodate a range of dryer window vents and ensure a perfect fit, the Fusion360 file for the `Window_Vent_Hose_Adapter.stl` is included in the repository. This allows for easy adjustments to the adapter’s dimensions, ensuring compatibility with various vent designs. It can be found in the `STL_FILES/Combined_Exhaust_Vent_System` folder.
 
-### Additional Considerations
-- Achieving an optimal printing environment, especially when using materials like ABS or ASA, involves more than just effective fume extraction. Sealing your printer, plays a crucial role in maintaining a stable temperature inside the build chamber. For this purpose, applying tape to seal the bottom panel can significantly reduce heat loss.
-- Not only do these sealing measures contribute to a more controlled printing environment, but they also allow for the fan to operate at full power (when combined with bed fans) without compromising the chamber's temperature. This balance ensures that while fumes are efficiently extracted, the internal conditions remain ideal for high-quality prints.
-- Sealing components, tailored specifically for the Voron 2.4, can be found in the `STL_FILES/Accessories_&_Tools` folder:
-  - `Extrusion_End_Cap-x4.stl`: Designed to seal the ends of the extrusions, reducing air leakage.
-  - `Z_Cover_A.stl` & `Z_Cover_B.stl`: These covers seal the Z-axis motors, preventing heat escape.
-  - `Z_Plug.stl`: Plugs for sealing any remaining openings around the Z-axis belts.
+10. **Additional Considerations:**
+	- Achieving an optimal printing environment, especially when using materials like ABS or ASA, involves more than just effective fume extraction. Sealing your printer, plays a crucial role in maintaining a stable temperature inside the build chamber. For this purpose, applying tape to seal the bottom panel can significantly reduce heat loss.
+	- Not only do these sealing measures contribute to a more controlled printing environment, but they also allow for the fan to operate at full power (when combined with bed fans) without compromising the chamber's temperature. This balance ensures that while fumes are efficiently extracted, the internal conditions remain ideal for high-quality prints.
+	- Sealing components, tailored specifically for the Voron 2.4, can be found in the `STL_FILES/Accessories_&_Tools` folder:
+  		- `Extrusion_End_Cap-x4.stl`: Designed to seal the ends of the extrusions, reducing air leakage.
+  		- `Z_Cover_A.stl` & `Z_Cover_B.stl`: These covers seal the Z-axis motors, preventing heat escape.
+  		- `Z_Plug.stl`: Plugs for sealing any remaining openings around the Z-axis belts.
 
 
 ## Combined Exhaust Ventilation System (CEVS) Installation Guide
@@ -166,7 +166,7 @@ The STL files for the V-Flow system are organized into three main directories wi
 
 ### CEVS Step-by-Step Installation
 1. **Heat Inserts and Foam Tape Application**:
-   - Begin by adding heat inserts to the CEVS Main Hub. Pay special attention to the highlighted rim around the fan opening, which serves as a guideline for applying 1mm thick foam tape to ensure a proper seal. ![](Reference_Images/CEVS-Print_Orientation.jpg) & ![](Reference_Images/CEVS-Foam_Tape_Example.jpg)
+   - Begin by adding heat inserts to the CEVS Main Hub. Pay special attention to the highlighted rim around the fan opening, which serves as a guideline for applying 1mm thick foam tape to ensure a proper seal. ![](Reference_Images/CEVS-Print_Orientation.jpg) ![](Reference_Images/CEVS-Foam_Tape_Example.jpg)
 
 2. **Silicon One-Way Valves**:
    - Using the `Silicon_Cutting_Guide.stl` found in the `STL_FILES/Accessories_&_Tools` folder, craft two silicon one-way valves. Careful and precise cutting is essential. After cutting the main shape, make a central incision and insert an M3x8mm bolt through. Secure a heat insert to the adapter and screw in the bolt gently, keeping the silicon flush against the `CEVS-Hose_Adapter-x3.stl` for an optimal seal. ![](Reference_Images/CEVS-Cross_Section.jpg)
@@ -174,18 +174,20 @@ The STL files for the V-Flow system are organized into three main directories wi
 3. **Attaching Hose Adapters**:
    - Secure the hose adapters to the CEVS main hub using four M3x8mm bolts for each adapter. Tighten the bolts until the foam compresses and each adapter aligns flush with the hub's surface. ![](Reference_Images/CEVS-Overview.jpg)
    - Attach the 2.5-inch hose to the adapters using hose clamps. **Important! - Each adapter connecting to a printer must be fitted with a silicon one-way valve. These valves are critical for preventing air from flowing from one printer to another when its fan is not in operation.**
-   - The correct positioning of the adapters and one-way valves is crucial for their effective operation. They must be installed level, as uneven placement could lead to the silicon valves malfunctioning. A valve pointing upwards, for example, could flap downwards,  compromising the airflow blockage. Proper alignment, with all seals positioned horizontally, is essential for maintaining the desired airflow dynamics and preventing backflow.
-   - ### **Congratulations on assembling your V-Flow system. This setup significantly improves air quality by efficiently managing printer fumes.**
+   	- The correct positioning of the adapters and one-way valves is crucial for their effective operation. They must be installed level, as uneven placement could lead to the silicon valves malfunctioning. A valve pointing upwards, for example, could flap downwards,  		compromising the airflow blockage. Proper alignment, with all seals positioned horizontally, is essential for maintaining the desired airflow dynamics and preventing backflow.
 
-  
-# G-Code Configuration Guide for V-Flow System
-  - This guide details the configuration of Klipper G-code necessary for integrating the V-Flow system with your 3D printer, particularly focusing on managing the chamber temperature effectively. It builds upon the Ellis bed fan modification, enhancing it for this specific application. You can refer to the original modification [here](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Bed_Fans).
+**Congratulations on assembling your V-Flow system. This setup significantly improves air quality by efficiently managing printer fumes.**
 
-## Important Note
-  - Before proceeding with the configuration, please note that **pinouts must be adjusted according to your specific hardware setup**. The example provided uses `PA8` as the pin for the exhaust fan, but this will vary based on your printer's electronics and how you have connected your fan.
+
+# G-Code Configuration Guide
+The detailed guide below demonstrates how to implement advanced temperature and fan control settings based on various parameters such as material type and bed/chamber temps. These examples provide an approach for those looking to optimize their printing process with tailored configurations. It builds upon the Ellis bedFan modification, enhancing it for this specific application. You can refer to the original modification [here](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Bed_Fans).
+- If you'd like a simplied exhaust fan control method, refer to the `Simplified Fan Controls` section at the bottom of this guide.
 
 ##  Noctua Exhaust Fan Configuration
-  - The configuration below sets up a generic fan in Klipper, naming it `Exhaust`. This fan is intended to run at 100% power for effective fume extraction but includes settings for PWM control to adjust fan speed if necessary.
+  - The configuration below sets up a generic fan in Klipper, naming it `Exhaust`. This fan is intended to run at 100% power for effective fume extraction but includes the cycle_time parameter for PWM control to adjust fan speed if necessary.
+  - During testing I found that lowering the fan speed to below 50% caused it to emit unusul noises during operation. It's recommended to keep the fan running at full speed for optimal performance and to avoid potential noise issues.
+	- Should you need to adjust the fan speed for any reason, consider testing different speeds carefully to find a balance between effective fume extraction and acceptable noise levels.
+  - ### Important Note - Pinouts must be adjusted according to your specific hardware setup!!!
 ```ini
 ########## Exhaust Fan #########
 # Configure the exhaust fan (Noctua case fan)
@@ -196,19 +198,15 @@ shutdown_speed: 0.0    # Fan speed upon shutdown, ensuring it turns off
 kick_start_time: 5.0   # Time to kickstart the fan, necessary for reliable start-up
 cycle_time: 0.00004    # Frequency for PWM signal (25kHz), allows speed control
 ```
-  - While the cycle_time parameter is set to allow PWM control over the fan speed, it's crucial to be aware that lowering the fan speed to below 50% may cause the fan to emit unusual noises during operation. This behavior was observed during testing and is likely due to the characteristics of the Noctua fan when operated at low PWM frequencies or duty cycles. It's recommended to keep the fan running at full speed for optimal performance and to avoid potential noise issues.
-
-    - Should you need to adjust the fan speed for any reason, consider testing different speeds carefully to find a balance between effective fume extraction and acceptable noise levels. However, for most applications, especially those involving fume extraction, running the fan at 100% power is advised.
-
-We also define a macro to control the exhaust fan's operational parameters, including its speed and on/off state tracking.
-```
+ - We also define a macro to control the exhaust fan's operational parameters, including its speed and on/off state tracking.
+```ini
 [gcode_macro exhaustfanvars]
 variable_speed_exhaust_fan: 1.0  # Default speed for the exhaust fan
 variable_exhaust_on: 0           # Tracks the state of the exhaust fan (0 = off, 1 = on)
 ```
-To control the exhaust fan, we use two macros: one to turn the fan on and another to turn it off. These macros adjust the fan's speed and update the fan's state accordingly. 
-Each macro also triggers a monitoring loop by updating a delayed G-code command. This monitoring loop can adjust the bed fan speeds or take other actions based on the printer's current state.
-```
+ - To control the exhaust fan, we use two macros: one to turn the fan on and another to turn it off. These macros adjust the fan's speed and update the fan's state accordingly. The last macro is used to turn the exhaust fan off in the print_end routine.
+	- Each macro also triggers a monitoring loop by issuing a delayed G-code command `UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1`. This monitoring loop can adjust the bedFan speeds or take other actions based on the printer's current state.
+```ini
 [gcode_macro set_exhaust_on]
 gcode:
     SET_FAN_SPEED FAN=Exhaust SPEED={printer["gcode_macro exhaustfanvars"].speed_exhaust_fan|float}
@@ -220,26 +218,31 @@ gcode:
     SET_FAN_SPEED FAN=Exhaust SPEED=0
     SET_GCODE_VARIABLE MACRO=exhaustfanvars VARIABLE=exhaust_on VALUE=0
     UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1  # Initiates the monitoring loop
+
+[delayed_gcode STOP_EXHAUST_DELAYED]
+gcode:
+    SET_EXHAUST_OFF
 ```
 
-## Bed Fans Configuration
-  - For managing the temperature of the chamber, another set of fans, referred to as Bed Fans, are configured. The Bed Fans are strategically configured to distribute heat from the bed heater, significantly improving chamber temperature uniformity and heating efficiency. 
-```
+
+## BedFans Configuration
+  - For managing the temperature of the chamber, another set of fans, referred to as `BedFans`, are configured. The BedFans are designed to distribute heat from the bed heater, significantly improving chamber temperature uniformity and heating efficiency. 
+```ini
 ########## Bed Fans #########
 [fan_generic BedFans]  # Configuration for bed fans
-pin: PD14               # Pin used for the bed fans
+pin: PD14              # Pin used for the bed fans
 kick_start_time: 0.5   # Time to kickstart the fans
 ```
-We define variables to manage the operation of the Bed Fans, including the temperature thresholds and speeds for different conditions.
-```
+ - We define variables to manage the operation of the BedFans, including the temperature thresholds and speeds for different conditions. **These is where you'd adjust the BedFan settings (such as fan power) to fit your needs.**
+```ini
 [gcode_macro bedfanvars]
 variable_threshold_temp: 100      # Temperature threshold to enable/disable fans
 variable_speed_temp_reached: 0.6  # Fan speed once the target bed temperature is reached
 variable_speed_heating_up: 0.2    # Fan speed while the bed is heating up
 variable_speed_exhaust_on: 1.0    # Fan speed when the exhaust fan is active
 ```
-Additionally, macros are set up to adjust the Bed Fans' speed based on the bed temperature and whether the exhaust fan is running. This allows for precise control over the bed temperature, ensuring optimal printing conditions.
-```
+ - Additionally, macros are set up to adjust the BedFans speed based on the bed temperature and whether the exhaust fan is running. This allows for better chamber temperature control, ensuring optimal printing conditions.
+```ini
 [gcode_macro BedFansSlow]
 gcode:
     {% set TARGET = printer.heater_bed.target|int %}
@@ -281,7 +284,6 @@ gcode:
         SET_FAN_SPEED FAN=BedFans SPEED=0
     {% endif %}
 
-
 [gcode_macro BedFansOff]
 gcode:
     {% set TARGET = printer.heater_bed.target|int %}
@@ -301,8 +303,8 @@ gcode:
         SET_FAN_SPEED FAN=BedFans SPEED=0  # Turn off BedFans if bed heater is off or below threshold
     {% endif %}
 ```
-Lastly, we introduce command overrides to incorporate bed and exhaust fan logic into the printer's temperature management routines. This includes modifications to heater temperature settings, wait-for-temperature commands, and fan speed adjustments based on ongoing temperature readings.
-```
+ - Lastly, we introduce command overrides to incorporate bed and exhaust fan logic into the printer's temperature management routines. This includes modifications to heater temperature settings, wait-for-temperature commands, and fan speed adjustments based on ongoing temperature readings.
+```ini
 ############ Command overrides ############
 # Override, set fan speeds to low and start monitoring loop.
 [gcode_macro SET_HEATER_TEMPERATURE]
@@ -332,7 +334,7 @@ gcode:
             UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=0 # Cancel bed fan loop if it's running
         {% endif %}
     {% endif %}
-	
+
 # Override M190 (Wait for Bed Temperature)
 # As a bonus, use TEMPERATURE_WAIT so we don't have to wait for PID to level off.
 [gcode_macro M190]
@@ -379,12 +381,12 @@ gcode:
 	_TURN_OFF_HEATERS
 ```
 
-The monitoring loop ensures that the Bed Fans are adjusted in real-time, based on the current bed temperature and the status of the exhaust fan. 
-  - This loop is a critical component of the temperature management system, providing continuous feedback and adjustments to maintain the desired chamber conditions.
 
-```
+## Monitoring Loop 
+ - The monitoring loop ensures that the BedFans are adjusted in real-time, based on the current bed temperature and the status of the exhaust fan. 
+	- This loop is a critical component of the temperature management system, providing continuous feedback and adjustments to maintain the desired chamber conditions.
+```ini
 ################ Monitoring loop #####################
-
 # Turns bed fans to the appropriate speed based on bed temperature and exhaust fan status.
 [delayed_gcode bedfanloop]
 gcode:
@@ -421,19 +423,17 @@ gcode:
     {% endif %}
 ```
 
-# Implementing Exhaust Fan Control in Print Start/End Routines
-  - This section outlines how to integrate advanced temperature management and fan control based on the material type and other parameters passed from Orca Slicer to Klipper firmware.
 
-## Passing Variables from Orca Slicer to Klipper
-  - To pass variables from Orca Slicer to Klipper, use custom slicer settings in your print start G-code. Insert the following line in Orca Slicer's custom start G-code section:
-
-```gcode
+## Implementing Exhaust Fan Control in the Print_Start Routine
+This section outlines how to integrate advanced temperature management and fan control based on the material type and other parameters passed from a Slicer to Klipper firmware.
+  - To pass variables from a particular Slicer to Klipper you must use the custom slicer settings in it's print_start G-code. In the example below I am using Orca Slicer. **!The code required will change depending on what slicer you're using.!**
+  - Insert the following line in Orca Slicer's custom start G-code section. This command below passes the initial layer temperatures, filament type, and chamber temperature to Klipper, which can be utilized in your print_start macro.
+```ini
+gcode:
 START_PRINT EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_initial_layer_single] FILAMENT_TYPE=[filament_type] CHAMBER=[chamber_temperature]
 ```
-This command passes the initial layer temperatures, filament type, and chamber temperature to Klipper, which can be utilized in your print_start macro.
-In Klipper, define a print_start macro in your printer.cfg file to utilize the variables passed from the slicer:
-  - These are only basic examples and are not meant to be a full print_start macro.
-```
+ - In order to use the variables in Klipper you must define them in your print_start macro in your printer.cfg file.
+```ini
 [gcode_macro print_start]
 gcode:
     # Variables passed from the slicer
@@ -441,18 +441,32 @@ gcode:
     {% set EXTRUDER_TEMP = params.EXTRUDER|float %}
     {% set CHAMBER_TEMP = params.CHAMBER|float %}
     {% set MATERIAL = params.FILAMENT_TYPE|string %}
+```
+ - An example of how this can be useful, the code below turns on the exhaust fan if the material is either ABS/ASA. It also adjusts the offset of my nozzle if the material is PETG.
+```ini
+    # Material-dependent settings
+    RESPOND MSG="Material: {MATERIAL}"
+    {% if MATERIAL == "PLA" %}
+        # PLA does not require special handling
+    {% elif MATERIAL == "PET" %}
+        SET_GCODE_OFFSET Z_ADJUST=0.020 MOVE=1  ; Adjust Z offset for PET
+    {% elif MATERIAL == "ABS" or MATERIAL == "ASA" %}
+        SET_EXHAUST_ON  ; Enable exhaust fan for materials that require it
+    {% endif %}
+```
+ - Another example of advanced parameter passing, managing extruder and bed temperatures. In the code below I set the bed_temp but do not wait for the temperature to be reached. Instead I perform homing and QGL and then return conduct a bed heatsoak. While this order of operations is a matter of preference the key is the command `UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1`, which initiates a monitoring loop for the bedFans.
+	- This loop is essential for keeping the bedFans at lower speeds during the heating phase and then increasing their speed to a predetermined level once the target temperature is achieved. This also enables speed adjustment in conjunction with the fume extraction system, turning them to a predetermined speed once the exhaust fan is turned on/off. 
+```ini
+# Initial temperature setting for bed and extruder without delay
+SET_HEATER_TEMPERATURE HEATER=heater_bed TARGET={BED_TEMP} WAIT=false
+SET_HEATER_TEMPERATURE HEATER=extruder TARGET={EXTRUDER_TEMP} WAIT=false
 
-    # Set initial bed and extruder temperatures without waiting
-    SET_HEATER_TEMPERATURE HEATER=heater_bed TARGET={BED_TEMP} WAIT=false
-    SET_HEATER_TEMPERATURE HEATER=extruder TARGET={EXTRUDER_TEMP} WAIT=false
-    
-    # Start the bed fan loop to ensure proper temperature management from the beginning
-    UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1
+# Initiating bed fan loop for effective temperature control
+UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1
 ```
-Implement a routine for heating the bed with an optional heatsoak phase, adjusting fan settings and chamber temperature as needed:
-  - The key is to call the monitoring loop via the "UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1" command.
-```
-    # Bed heatsoak routine
+ - The subsequent example illustrates the application of this approach during bed heatsoak procedures, extending also to chamber heatsoak processes. In my testing I've found that it's necessary to call `UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1` anytime the bed_temp is adjusted. So pay close attention to where it's being called in the code below and try to implement this in your start macro.
+```ini
+    # 3 ----- BED HEATSOAK -------------------------------------
     STATUS_HEATING
     {% if (SOAK > 0) and (printer.heater_bed.target < (BED_TEMP - 8)) %}
         {% if CHAMBER_TEMP > 0 %}
@@ -466,22 +480,26 @@ Implement a routine for heating the bed with an optional heatsoak phase, adjusti
         TEMPERATURE_WAIT SENSOR=heater_bed MINIMUM={BED_TEMP}
         UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1
     {% endif %}
-```
-Adjust settings based on the material type, such as enabling the exhaust fan for specific materials:
-```
-    # Material-dependent settings
-    RESPOND MSG="Material: {MATERIAL}"
-    {% if MATERIAL == "PLA" %}
-        # PLA does not require special handling
-    {% elif MATERIAL == "PET" %}
-        SET_GCODE_OFFSET Z_ADJUST=0.020 MOVE=1  ; Adjust Z offset for PET
-    {% elif MATERIAL == "ABS" or MATERIAL == "ASA" %}
-        SET_EXHAUST_ON  ; Enable exhaust fan for materials that require it
+
+  # ----- CHAMBER HEATSOAK ----------------------------------
+ # If a setpoint is defined and a sensor available, then we wait to reach the chamber temperature
+    STATUS_HEATING
+    {% if chamber_sensor_enabled %}
+        {% if CHAMBER_TEMP > 0 %}
+            # Wait for the temperature of the chamber to be reached (default max: 15min)
+            {% if verbose %}
+                RESPOND MSG="Waiting for target chamber temperature"
+            {% endif %}
+            HEATSOAK_CHAMBER TEMP={CHAMBER_TEMP} MAXTIME={CHAMBER_MAXTIME}
+            UPDATE_DELAYED_GCODE ID=bedfanloop DURATION=1
+        {% endif %}
     {% endif %}
 ```
-Print End Routine with Exhaust Fan Delayed Shutdown
-  - Ensure the exhaust fan continues running for 15 minutes after the print ends to clear any remaining fumes:
-```
+
+
+## Print_End Routine with Exhaust Fan Delayed Shutdown
+  - The last consideration is the print_end routine. We want to ensure that the exhaust fan continues to run after the print ends for enough time to exchange the air and remove any remaining ABS/ASA fumes. The code below runs the exhaust fan for 15 minutes and is placed at the very bottom of my print_end macro.
+```ini
 [gcode_macro print_end]
 gcode:
     # Parameters for delayed exhaust shutdown (default 15 minutes)
@@ -491,32 +509,32 @@ gcode:
     UPDATE_DELAYED_GCODE ID=STOP_EXHAUST_DELAYED DURATION={EXHAUST_TIME}
 ```
 
-# Simplified Fan Control Option
-  - The detailed guide above demonstrates how to implement advanced temperature and fan control settings based on various parameters such as material type and desired temperatures. These examples provide a approach for those looking to optimize their printing process with tailored configurations for each print job. However, if you're looking for a more straightforward solution or if the advanced settings do not align with your needs, you can opt for a simplified method of fan control.
 
-## Basic Fan Control Integration
-  - Instead of using the complex conditional logic and variable passing from the slicer, you can directly command the exhaust fan to turn on at a specific point in your start routine. This method is beneficial for users who do not require material-dependent settings or advanced temperature management.
-
-### Implementing Simplified Exhaust Fan Control
-  - To incorporate basic exhaust fan control into your print start routine, you only need to include the `SET_EXHAUST_ON` command at the appropriate place within your `print_start` macro. This ensures the exhaust fan is activated early in the print process, providing general fume extraction without the need for intricate setup.
-
-#### Example:
-
+## Simplified Fan Controls
+  - If you're looking for a more straightforward solution instead of using the complex conditional logic and variable passing from the slicer, you can directly command the exhaust fan to turn on/off at a specific point in your print start/end routines via the `SET_EXHAUST_ON` & `SET_EXHAUST_OFF` commands.
 ```ini
 [gcode_macro print_start]
 gcode:
     # Simplified fan control
     SET_EXHAUST_ON  ; Turn on the exhaust fan at the start of the print
 
-    # Additional standard print start commands follow...
+    # Remaining print_start script below...
+
+[gcode_macro print_end]
+gcode:
+    # Simplified fan control
+    SET_EXHAUST_OFF  ; Turn off the exhaust fan at the end of the print
 ```
+
+
 ## Conclusion
-  - Whether you choose the advanced method for precise control based on specific parameters or the simplified approach for ease of use, both strategies provide effective ways to manage your printing environment's temperature and air quality. The advanced settings offer customization and optimization for various materials and conditions, while the simplified method ensures basic ventilation needs are met with minimal setup.
+  - Whether you choose the advanced method for precise control based on specific parameters or the simplified approach for ease of use, both strategies provide effective ways to manage your printing environment's air quality. The advanced settings offer customization and optimization for various materials and conditions, while the simplified method ensures basic ventilation needs are met with minimal setup.
 
 ### Guidance for Next Steps
-1. **Test Configuration:** After implementing these configurations, perform test prints to ensure that the exhaust and bed fans operate as expected. Monitor the chamber and bed temperatures to verify that they remain within desired ranges.
-2. **Adjust Parameters:** Based on test print results, adjust the fan speeds, temperature thresholds, and other parameters as necessary to optimize printing conditions for your specific setup.
+1. **Test Configuration:** After implementing these configurations, perform test prints to ensure that the exhaust and bedFans operate as expected. Monitor the chamber and bed temperatures to verify that they remain within desired ranges.
+2. **Adjust Parameters:** Based on test print results and your observations, adjust the fan speeds, temperature thresholds, and other parameters as necessary to optimize printing conditions for your specific setup.
 3. **Documentation:** Keep detailed notes on any changes made to the configuration for future reference or troubleshooting.
+
 
 
 # Determining Noctua NF-A6x25 Fan Suitability for Fume Extraction
@@ -543,12 +561,11 @@ gcode:
   - This analysis confirms the adequacy of the Noctua NF-A6x25 for this specific application, ensuring a safe environment for 3D printing activities involving ABS material.
 
 
+
 ## Support
 - Feel free to reach out to me on discord at okashiikuusou
-
-
+- 
 # Acknowledgements
-- The `Voron-M16_Cable_Gland_Housing.stl` and `Voron-Rear_Mounting_Plate.stl` components are adapted from the umbilical passthrough mod by [whopping_Voron_mods](https://github.com/tanaes/whopping_Voron_mods/tree/main/umbilical_passthrough).
+- The `Voron-Rear_Mounting_Plate.stl` is a component I've remixed. The `Voron-M16_Cable_Gland_Housing.stl` stl remains unchanged. Both are from the umbilical passthrough mod by [whopping_Voron_mods](https://github.com/tanaes/whopping_Voron_mods/tree/main/umbilical_passthrough)
 - Inspiration for the one-way valve feature comes from the 2.4 Window Ventilation System available on [TeamFDM](https://www.teamfdm.com/files/file/463-24-window-ventilation-system/).
 - The quick connect mechanism was inspired by The Aluminum Carpenter's [YouTube video](https://www.youtube.com/watch?v=LfHVOZGakTQ).
-
