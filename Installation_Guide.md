@@ -13,10 +13,15 @@ This installation guide covers various aspects necessary for setting up the V-Fl
 
 ## Prerequisites for V-Flow System Installation
 To successfully set up the V-Flow system, the following components are essential:
-- **Noctua NF-A6x25 Fan**: This fan is recommended for its efficient airflow and quiet operation. [View on Amazon](https://www.amazon.com/dp/B01K4HRLRI?psc=1&ref=ppx_yo2ov_dt_b_product_details)
-- **Dryer Vent Window Kit**: This kit is designed for a 4-inch hose. However, the `Window_Vent_Hose_Adapter.stl`, found in the `STL_FILES/Combined_Exhaust_Vent_System` folder, modifies this setup to accommodate a 2.5-inch hose. [View on Amazon](https://www.amazon.com/gp/product/B0BXWH53M4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
-- **2.5-inch Hose**: This hose connects the printer(s) to the window dryer vent. Note: The hose is available in 10ft lengths; assess your space to determine the required length for your setup. [View on Amazon](https://www.amazon.com/gp/product/B0C85G8P2R/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
-- **Silicon Mats**: These mats are necessary for crafting one-way valves used with the CEVS. Additionally, adding a valve on the `Window_Vent_Hose_Adapter.stl` for single or dual printer setups can prevent backdraft, though it remains optional. [View on Amazon](https://www.amazon.com/gp/product/B083TKTJS5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
+| Component | Description | Link |
+|-----------|-------------|------|
+| **Noctua NF-A6x25 Fan** | Recommended for its efficient airflow and quiet operation. ([Fume Extraction Analysis](Noctua-NF-A6x25-Fume_Extraction_Analysis.md)) | [View on Amazon](https://www.amazon.com/dp/B01K4HRLRI?psc=1&ref=ppx_yo2ov_dt_b_product_details) |
+| **Dryer Vent Window Kit** | Designed for a 4-inch hose. Use `Window_Vent_Hose_Adapter.stl` from the `STL_FILES/Combined_Exhaust_Vent_System` folder for a 2.5-inch hose adapter. | [View on Amazon](https://www.amazon.com/gp/product/B0BXWH53M4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
+| **2.5-inch Hose** | Connects the printer(s) to the window dryer vent. Available in 10ft lengths. | [View on Amazon](https://www.amazon.com/gp/product/B0C85G8P2R/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
+| **PG7 Cable Gland** | Attaches the CAN bus cable to the `Voron-M16_Cable_Gland_Housing.stl`. | [View on Amazon](https://www.amazon.com/uxcell-3mm-6-5mm-Waterproof-Adjustable-Locknut/dp/B08K8FB4KV/ref=sr_1_7?crid=3DUB7M4NL1SBC&keywords=pg7%2Bcable%2Bgland&qid=1707210582&sprefix=PG7%2Caps%2C167&sr=8-7&th=1) |
+| **Molex Micro-Fit 3.0 (4 Pin) Connectors** | Allows for installation/disconnection of the CAN bus cable. **This specific type of connector is not a strict requirement**; any connector that fits through the `Voron-M16_Cable_Gland_Housing.stl` will work. [Example Photo](Reference_Images/Rear_Mounting_Plate-Canbus_Connector_Example.jpg)| [View on Amazon](https://www.amazon.com/Molex-Micro-Fit-Circuits-receptacle-Terminal/dp/B078Q798L9/ref=sr_1_3?crid=YGCXCXJKPD6H&keywords=microfit+3.0+connectors&qid=1707212019&sprefix=microfit+3.0+connectors%2Caps%2C152&sr=8-3) |
+| **Molex Micro-Fit 3.0 (2 Pin) Connectors** | Facilitates the easy disconnection of the exhaust fan, simplifying the removal of the back panel for maintenance. | [View on Amazon](https://www.amazon.com/Molex-Micro-Fit-Circuits-receptacle-Terminal/dp/B078PZY6SM/ref=sr_1_5?crid=YGCXCXJKPD6H&keywords=microfit+3.0+connectors&qid=1707212019&sprefix=microfit+3.0+connectors%2Caps%2C152&sr=8-5) |
+| **Silicon Mats** | For crafting one-way valves for the CEVS. Adding a valve on `Window_Vent_Hose_Adapter.stl` can prevent backdraft for single/dual printer setups (optional). | [View on Amazon](https://www.amazon.com/gp/product/B083TKTJS5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
 
 
 ## Recommended Mods
