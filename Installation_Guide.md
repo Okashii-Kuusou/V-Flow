@@ -159,7 +159,7 @@ The STL files for the V-Flow system are organized into three main directories wi
 To achieve the highest quality prints, especially with materials like ABS or ASA, it's essential to ensure your 3D printer's enclosure is properly sealed. This guide highlights crucial steps and components to enhance your printer's environment, maintaining stable temperatures and supporting efficient fume extraction.
 
 1. **Seal the Bottom Panel**: 
-   - A fundamental yet impactful strategy to curb heat loss involves sealing the bottom panel of your printer. Employing high-temperature resistant tape to cover any gaps markedly enhances heat retention within the chamber. For aesthetic considerations, it is recommended to apply the sealing tape to the underside of the bottom panel rather than the top.
+   - A fundamental yet impactful strategy to curb heat loss involves sealing the bottom panel of your printer. Employing high-temperature resistant tape to cover any gaps markedly enhances heat retention within the chamber. For aesthetic considerations, it is recommended to apply the sealing tape to the underside of the bottom panel rather than the top. ![](Images/Bottom_Panel_Seal.jpg)
 
 2. **Install Foam Tape on All Panels**:
    - Ensuring that all panels, including side, top, and back, are properly sealed with foam tape is crucial. Adhere to Voron's recommendations and installation instructions for applying foam tape.
