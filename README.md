@@ -51,7 +51,7 @@ To enhance the performance of the V-Flow system and ensure optimal chamber tempe
 
 
 # Acknowledgements
-- The `Rear_Mounting_Plate.stl` is a remixed component. The cable gland STL's remains unchanged. They're are from the umbilical passthrough mod by [whopping_Voron_mods](https://github.com/tanaes/whopping_Voron_mods/tree/main/umbilical_passthrough)
+- The `Rear_Mounting_Plate.stl` is a remixed component. The cable gland STL's remains unchanged. They're from the umbilical passthrough mod by [whopping_Voron_mods](https://github.com/tanaes/whopping_Voron_mods/tree/main/umbilical_passthrough)
 - Inspiration for the one-way valve feature comes from the 2.4 Window Ventilation System available on [TeamFDM](https://www.teamfdm.com/files/file/463-24-window-ventilation-system/).
 - The quick connect mechanism was inspired by The Aluminum Carpenter's [YouTube video](https://www.youtube.com/watch?v=LfHVOZGakTQ).
 
