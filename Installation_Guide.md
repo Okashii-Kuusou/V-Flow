@@ -15,7 +15,7 @@ This installation guide covers various aspects necessary for setting up the V-Fl
 To successfully set up the V-Flow system, the following components are essential:
 | Component | Description | Link |
 |-----------|-------------|------|
-| **Noctua NF-A6x25 Fan** | Recommended for its efficient airflow and quiet operation. ([Fume Extraction Analysis](Noctua-NF-A6x25-Fume_Extraction_Analysis.md)) | [View on Amazon](https://www.amazon.com/dp/B01K4HRLRI?psc=1&ref=ppx_yo2ov_dt_b_product_details) |
+| **Sanyo Denki 9GA0612P1H03 Fan** | Recommended for its improved static pressure. ([Upgraded Fan/Noctua Replacement](Sanyo_Denki_9GA0612P1H03.md)) | [View on Digikey](https://www.digikey.com/en/products/detail/sanyo-denki-america-inc/9GA0612P1H03/6192282) |
 | **Dryer Vent Window Kit** | Designed for a 4-inch hose. Use `Window_Vent_Hose_Adapter.stl` from the `STL/Combined_Exhaust_Vent_System` folder for a 2.5-inch hose adapter. | [View on Amazon](https://www.amazon.com/gp/product/B0BXWH53M4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
 | **2.5-inch Hose** | Connects the printer(s) to the window dryer vent. Available in 10ft lengths. | [View on Amazon](https://www.amazon.com/gp/product/B0C85G8P2R/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
 | **PG7 Cable Gland** | Attaches the CAN bus cable to the `PG7_Cable_Gland.stl`. | [View on Amazon](https://www.amazon.com/uxcell-3mm-6-5mm-Waterproof-Adjustable-Locknut/dp/B08K8FB4KV/ref=sr_1_7?crid=3DUB7M4NL1SBC&keywords=pg7%2Bcable%2Bgland&qid=1707210582&sprefix=PG7%2Caps%2C167&sr=8-7&th=1) |
@@ -136,19 +136,19 @@ The STL files for the V-Flow system are organized into three main directories wi
    - While superglue is usually unnecessary due to the magnets' tight fit, verify that each magnet sits flush against the part's surface. If fitting the magnets is difficult due to your printer's accuracy, gently press them into their slots with channel lock pliers.
    - Confirm the parts' magnetic connection by snapping together the `Fan_Interface_Ring.stl` and `Hose_Adapter_Ring.stl`. They should connect with a noticeable force. To separate the pieces, twist the hose adapter.
 
-7. **Attaching the Noctua Fan**:
-   - With the hose adapter set aside, secure a 60mm Noctua fan to the fan interface ring using four M3x30mm bolts. 
-   - Use a box cutter or sharp knife to score the perimeter of the Noctua fan on the `Fan_Interface_Ring.stl` printed part as indicated in the photo. This scoring marks where to apply the 1mm thick foam tape for an airtight seal. ![](Images/Fan_Interface_Ring-Scored.jpg)
+7. **Attaching the Fan**:
+   - With the hose adapter set aside, secure the Sanyo Denki fan to the fan interface ring using four M3x30mm bolts. 
+   - Use a box cutter or sharp knife to score the perimeter of the Sanyo Denki fan on the `Fan_Interface_Ring.stl` printed part as indicated in the photo. This scoring marks where to apply the 1mm thick foam tape for an airtight seal. ![](Images/Fan_Interface_Ring-Scored.jpg)
    - After applying the foam tape, trim any overhang with wire cutters for a clean edge. ![](Images/Fan_Interface_Ring-Foam_Tape_Applied.jpg)
-   - Proceed to mount the Noctua fan onto the fan shroud employing the same M3x30mm bolts. Exercise caution not to overtighten, the heat inserts were not inserted on the opposite side of the printed part, so you run the risk of pulling them out of the plastic. ![](Images/Fan_Interface_Ring-Hose_Adapter_Underside_View.jpg)
+   - Proceed to mount the Sanyo Denki fan onto the fan shroud employing the same M3x30mm bolts. Exercise caution not to overtighten, the heat inserts were not inserted on the opposite side of the printed part, so you run the risk of pulling them out of the plastic. ![](Images/Fan_Interface_Ring-Hose_Adapter_Underside_View.jpg)
 
 8. **Final Printer Assembly Steps**:
    - Start by inserting two M5 T-nuts into the 2020 extrusion at the back of your printer. Secure the rear mounting plate with two M5x15mm bolts but leave them slightly loose.
    - Next, attach the `Front_Mounting_Plate.stl` to the inside of the back panel using three M3x12mm bolts (shown in purple). Tighten these bolts along with the previously installed M5 bolts to compress the foam tape and ensure a tight seal. Use a flashlight to check for any gaps/light leaks between the foam tape and back plate. ![](Images/V-Flow_Front_View.jpg)
-   - Prior to securing the fan shroud, it's recommended to integrate a detachable connector for the CAN bus cable to streamline future maintenance tasks. The `PG7_Cable_Gland.stl`can fit a Micro-Fit 3.0 connector. This modification is crucial not only for convenience but also for ensuring the system remains organized and easily serviceable. Additionally, applying a similar approach to the Noctua fan's connection will further facilitate straightforward system adjustments and repairs. ![](Images/Rear_Mounting_Plate-Canbus_Connector_Example.jpg)
+   - Prior to securing the fan shroud, it's recommended to integrate a detachable connector for the CAN bus cable to streamline future maintenance tasks. The `PG7_Cable_Gland.stl`can fit a Micro-Fit 3.0 connector. This modification is crucial not only for convenience but also for ensuring the system remains organized and easily serviceable. Additionally, applying a similar approach to the Sanyo Denki fan's connection will further facilitate straightforward system adjustments and repairs. ![](Images/Rear_Mounting_Plate-Canbus_Connector_Example.jpg)
    - Attach the fan shroud to the mounting plate with 4 M3x8mm bolts. Ensure the foam tape compresses as you tighten the bolts for an airtight seal. ![](Images/Transparent_Rear_View.jpg)
    - Finalize the main exhaust system by attaching the 2.5" hose to the hose adapter ring using a hose clamp, then connect it to the fan interface ring with a satisfying snap for a secure fit.
-   - Here's the rear view of my Voron 2.4, showcasing the completed V-Flow system setup. To keep the cables neatly organized, I incorporated a printed cable raceway along the back. Within this raceway, I've equipped the Noctua fan with a connector, simplifying the disassembly process. ![](Images/Completed_Example_Photo.jpg)
+   - Here's the rear view of my Voron 2.4, showcasing the completed V-Flow system setup. To keep the cables neatly organized, I incorporated a printed cable raceway along the back. Within this raceway, I've equipped the Sanyo Denki fan with a connector, simplifying the disassembly process. ![](Images/Completed_Example_Photo.jpg)
 
 9. **Dryer Window Vent Installation**:
     - For those operating a single printer setup, the final assembly step is to install the dryer window vent and connect it using the `Window_Vent_Hose_Adapter.stl`. To address potential backflow issues, incorporating a one-way valve into this adapter is recommended. A silicon cutting guide is available in the `STL/Accessories_&_Tools` folder. Crafting the silicon mat for the valve requires careful attention; use a sharp box cutter for accuracy. Once the main shape is cutout, make an incision in the center and push an M3X8mm bolt through the slit. After affixing a heat insert to the adapter, carefully screw in the bolt, ensuring the silicon remains flush against the adapter for the best seal.
@@ -205,14 +205,14 @@ Implementing these steps and utilizing the outlined components will markedly ele
 The detailed guide below demonstrates how to implement advanced temperature and fan control settings based on various parameters such as material type and bed/chamber temps. These examples provide an approach for those looking to optimize their printing process with tailored configurations. It builds upon the Ellis bedFan modification, enhancing it for this specific application. You can refer to the original modification [here](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Bed_Fans).
 - If you'd like a simplied exhaust fan control method, refer to the `Simplified Fan Controls` section at the bottom of this guide.
 
-## Noctua Exhaust Fan Configuration
+## Exhaust Fan Configuration
   - The configuration below sets up a generic fan in Klipper, naming it `Exhaust`. This fan is intended to run at 100% power for effective fume extraction but includes the `cycle_time` parameter for PWM control to adjust fan speed if necessary.
   - During testing I found that lowering the fan speed to below 50% caused it to emit unusual noises during operation. It's recommended to keep the fan running at full speed for optimal performance and to avoid potential noise issues.
 	- Should you need to adjust the fan speed for any reason, consider testing different speeds carefully to find a balance between effective fume extraction and acceptable noise levels.
   - ### Important Note - Pinouts must be adjusted according to your specific hardware setup!!!
 ```ini
 ########## Exhaust Fan #########
-# Configure the exhaust fan (Noctua case fan)
+# Configure the exhaust fan
 [fan_generic Exhaust]
 pin: PA8               # Pin assignment for the exhaust fan
 max_power: 1.0         # Maximum power output to the fan, allowing it to run at 100%
