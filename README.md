@@ -22,7 +22,7 @@ Please follow the detailed steps in the [Installation Guide](Installation_Guide.
 To successfully set up the V-Flow system, the following components are essential:
 | Component | Description | Link |
 |-----------|-------------|------|
-| **Noctua NF-A6x25 Fan** | Recommended for its efficient airflow and quiet operation. ([Fume Extraction Analysis](Noctua-NF-A6x25-Fume_Extraction_Analysis.md)) | [View on Amazon](https://www.amazon.com/dp/B01K4HRLRI?psc=1&ref=ppx_yo2ov_dt_b_product_details) |
+| **Sanyo Denki 9GA0612P1H03 Fan** | Recommended for its improved static pressure. ([Upgraded Fan/Noctua Replacement](Noctua-NF-A6x25-Fume_Extraction_Analysis.md)) | [View on Digikey](https://www.digikey.com/en/products/detail/sanyo-denki-america-inc/9GA0612P1H03/6192282) |
 | **Dryer Vent Window Kit** | Designed for a 4-inch hose. Use `Window_Vent_Hose_Adapter.stl` from the `STL/Combined_Exhaust_Vent_System` folder for a 2.5-inch hose adapter. | [View on Amazon](https://www.amazon.com/gp/product/B0BXWH53M4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
 | **2.5-inch Hose** | Connects the printer(s) to the window dryer vent. Available in 10ft lengths. | [View on Amazon](https://www.amazon.com/gp/product/B0C85G8P2R/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
 | **PG7 Cable Gland** | Attaches the CAN bus cable to the `PG7_Cable_Gland.stl`. | [View on Amazon](https://www.amazon.com/uxcell-3mm-6-5mm-Waterproof-Adjustable-Locknut/dp/B08K8FB4KV/ref=sr_1_7?crid=3DUB7M4NL1SBC&keywords=pg7%2Bcable%2Bgland&qid=1707210582&sprefix=PG7%2Caps%2C167&sr=8-7&th=1) |
