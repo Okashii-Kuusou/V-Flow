@@ -6,7 +6,7 @@ After conducting a performance evaluation using a manometer, it was determined t
 
 ### New Recommended Fan: Sanyo Denki 9GA0612P1H03
 
-To address this issue, we recommend replacing the Noctua fan with the Sanyo Denki 9GA0612P1H03. This fan offers a higher static pressure, ensuring better performance in the V-Flow system.
+To address this issue, we recommend replacing the Noctua fan with the Sanyo Denki 9GA0612P1H03. This fan offers a higher static pressure, ensuring better performance in the V-Flow system. This is a drop in replacement.
 
 - **Product**: Sanyo Denki 9GA0612P1H03
 - **Link**: [Digi-Key Product Page](https://www.digikey.com/en/products/detail/sanyo-denki-america-inc/9GA0612P1H03/6192282)
