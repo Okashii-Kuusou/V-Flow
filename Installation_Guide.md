@@ -260,7 +260,7 @@ kick_start_time: 0.5   # Time to kickstart the fans
 variable_threshold_temp: 100      # Temperature threshold to enable/disable fans
 variable_speed_temp_reached: 0.6  # Fan speed once the target bed temperature is reached
 variable_speed_heating_up: 0.2    # Fan speed while the bed is heating up
-variable_speed_exhaust_on: 1.0    # Fan speed when the exhaust fan is active
+variable_speed_exhaust_on: 0.5    # Fan speed when the exhaust fan is active, set to 50%
 ```
  - Additionally, macros are set up to adjust the BedFans speed based on the bed temperature and whether the exhaust fan is running. This allows for better chamber temperature control, ensuring optimal printing conditions.
 ```ini
