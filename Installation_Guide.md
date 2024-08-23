@@ -206,8 +206,7 @@ The detailed guide below demonstrates how to implement advanced temperature and 
 - If you'd like a simplied exhaust fan control method, refer to the `Simplified Fan Controls` section at the bottom of this guide.
 
 ## Exhaust Fan Configuration
-  - The configuration below sets up a generic fan in Klipper, naming it `Exhaust`. This fan is intended to run at 100% power for effective fume extraction but includes the `cycle_time` parameter for PWM control to adjust fan speed if necessary.
-  - During testing I found that lowering the fan speed to below 50% caused it to emit unusual noises during operation. It's recommended to keep the fan running at full speed for optimal performance and to avoid potential noise issues.
+  - The configuration below sets up a generic fan in Klipper, naming it `Exhaust`. This fan is intended to run at 50% power for effective fume extraction and noise management but includes the `cycle_time` parameter for PWM control to adjust fan speed if necessary.
 	- Should you need to adjust the fan speed for any reason, consider testing different speeds carefully to find a balance between effective fume extraction and acceptable noise levels.
   - ### Important Note - Pinouts must be adjusted according to your specific hardware setup!!!
 ```ini
@@ -215,7 +214,7 @@ The detailed guide below demonstrates how to implement advanced temperature and 
 # Configure the exhaust fan
 [fan_generic Exhaust]
 pin: PA8               # Pin assignment for the exhaust fan
-max_power: 1.0         # Maximum power output to the fan, allowing it to run at 100%
+max_power: 0.5         # Power output to the fan, allowing it to run at 50%
 shutdown_speed: 0.0    # Fan speed upon shutdown, ensuring it turns off
 kick_start_time: 5.0   # Time to kickstart the fan, necessary for reliable start-up
 cycle_time: 0.00004    # Frequency for PWM signal (25kHz), allows speed control
