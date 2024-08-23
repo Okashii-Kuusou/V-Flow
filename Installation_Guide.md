@@ -214,7 +214,7 @@ The detailed guide below demonstrates how to implement advanced temperature and 
 # Configure the exhaust fan
 [fan_generic Exhaust]
 pin: PA8               # Pin assignment for the exhaust fan
-max_power: 0.5         # Power output to the fan, allowing it to run at 50%
+max_power: 1.0         # Power output to the fan, allowing it to run at 100%
 shutdown_speed: 0.0    # Fan speed upon shutdown, ensuring it turns off
 kick_start_time: 5.0   # Time to kickstart the fan, necessary for reliable start-up
 cycle_time: 0.00004    # Frequency for PWM signal (25kHz), allows speed control
@@ -222,7 +222,7 @@ cycle_time: 0.00004    # Frequency for PWM signal (25kHz), allows speed control
  - We also define a macro to control the exhaust fan's operational parameters, including its speed and on/off state tracking.
 ```ini
 [gcode_macro exhaustfanvars]
-variable_speed_exhaust_fan: 1.0  # Default speed for the exhaust fan
+variable_speed_exhaust_fan: 0.5  # Default speed for the exhaust fan
 variable_exhaust_on: 0           # Tracks the state of the exhaust fan (0 = off, 1 = on)
 ```
  - To control the exhaust fan, we use two macros: one to turn the fan on and another to turn it off. These macros adjust the fan's speed and update the fan's state accordingly. The last macro is used to turn the exhaust fan off in the print_end routine.
